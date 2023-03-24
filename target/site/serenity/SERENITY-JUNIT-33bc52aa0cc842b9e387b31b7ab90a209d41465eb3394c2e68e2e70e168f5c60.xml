@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Search PedidosYa" skipped="0" tests="1" time="19.02" timestamp="2023-03-24 11:34:11"><testcase name="Pizza results"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: driver.version: unknown
+PedidosYa.pageobjects.MainPage.setAddress(MainPage.java:62)
+PedidosYa.steps.PedidosYaUser.setAddress(PedidosYaUser.java:19)
+PedidosYa.stepsdefinitions.UserStepsDefinitions.setAddress(UserStepsDefinitions.java:23)
+✽.set the address(src/test/resources/features/PedidosYa.feature:6)
+</system-err></testcase></testsuite>

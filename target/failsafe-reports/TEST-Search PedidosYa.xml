@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="Search PedidosYa" time="19.115" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="webdriver.chrome.driver" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/src/test/resources/webdriver/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/test-classes:/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/SeleniumExercise4-1.0-SNAPSHOT.jar:/Users/rafaela.mendina/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/rafaela.mendina/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/rafaela.mendina/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-core/2.0.40/serenity-core-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/bytebuddy/byte-buddy/1.9.6/byte-buddy-1.9.6.jar:/Users/rafaela.mendina/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.6/byte-buddy-agent-1.9.6.jar:/Users/rafaela.mendina/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/rafaela.mendina/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/rafaela.mendina/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/rafaela.mendina/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/rafaela.mendina/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/rafaela.mendina/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2.jar:/Users/rafaela.mendina/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rafaela.mendina/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/rafaela.mendina/.m2/repository/cglib/cglib/3.2.5/cglib-3.2.5.jar:/Users/rafaela.mendina/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/rafaela.mendina/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/rafaela.mendina/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/rafaela.mendina/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-core/2.4.0/cucumber-core-2.4.0.jar:/Users/rafaela.mendina/.m2/repository/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/rafaela.mendina/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rafaela.mendina/.m2/repository/io/vavr/vavr/0.9.0/vavr-0.9.0.jar:/Users/rafaela.mendina/.m2/repository/io/vavr/vavr-match/0.9.0/vavr-match-0.9.0.jar:/Users/rafaela.mendina/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/rafaela.mendina/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/Users/rafaela.mendina/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-impl-2.3.0.1.jar:/Users/rafaela.mendina/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/rafaela.mendina/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-report-resources/2.0.40/serenity-report-resources-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-model/2.0.40/serenity-model-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-reports/2.0.40/serenity-reports-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-stats/2.0.40/serenity-stats-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.2.51/kotlin-stdlib-1.2.51.jar:/Users/rafaela.mendina/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.51/kotlin-stdlib-common-1.2.51.jar:/Users/rafaela.mendina/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/rafaela.mendina/.m2/repository/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar:/Users/rafaela.mendina/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/rafaela.mendina/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/rafaela.mendina/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/rafaela.mendina/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/rafaela.mendina/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/com/paulhammant/ngwebdriver/1.1.4/ngwebdriver-1.1.4.jar:/Users/rafaela.mendina/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20171121/jetty-util-9.4.8.v20171121.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20171121/jetty-io-9.4.8.v20171121.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.33.1/htmlunit-driver-2.33.1.jar:/Users/rafaela.mendina/.m2/repository/io/appium/java-client/6.1.0/java-client-6.1.0.jar:/Users/rafaela.mendina/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/rafaela.mendina/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/rafaela.mendina/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar:/Users/rafaela.mendina/.m2/repository/org/openpnp/opencv/3.2.0-1/opencv-3.2.0-1.jar:/Users/rafaela.mendina/.m2/repository/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar:/Users/rafaela.mendina/.m2/repository/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar:/Users/rafaela.mendina/.m2/repository/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/groovy/groovy/2.5.5/groovy-2.5.5.jar:/Users/rafaela.mendina/.m2/repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar:/Users/rafaela.mendina/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/rafaela.mendina/.m2/repository/joda-time/joda-time/2.7/joda-time-2.7.jar:/Users/rafaela.mendina/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar:/Users/rafaela.mendina/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/Users/rafaela.mendina/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/rafaela.mendina/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/rafaela.mendina/.m2/repository/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/Users/rafaela.mendina/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/rafaela.mendina/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.33/htmlunit-2.33.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.33/htmlunit-core-js-2.33.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.33/neko-htmlunit-2.33.jar:/Users/rafaela.mendina/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.2.0/htmlunit-cssparser-1.2.0.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.12.v20180830/websocket-client-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-client/9.4.12.v20180830/jetty-client-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-http/9.4.12.v20180830/jetty-http-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.12.v20180830/jetty-xml-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.12.v20180830/websocket-common-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.12.v20180830/websocket-api-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/rafaela.mendina/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/rafaela.mendina/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/rafaela.mendina/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/Users/rafaela.mendina/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/Users/rafaela.mendina/.m2/repository/org/asciidoctor/asciidoctorj/1.5.6/asciidoctorj-1.5.6.jar:/Users/rafaela.mendina/.m2/repository/org/jruby/jruby-complete/1.7.26/jruby-complete-1.7.26.jar:/Users/rafaela.mendina/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/rafaela.mendina/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar:/Users/rafaela.mendina/.m2/repository/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar:/Users/rafaela.mendina/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/rafaela.mendina/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/rafaela.mendina/.m2/repository/org/awaitility/awaitility/3.1.0/awaitility-3.1.0.jar:/Users/rafaela.mendina/.m2/repository/com/typesafe/config/1.3.1/config-1.3.1.jar:/Users/rafaela.mendina/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/Users/rafaela.mendina/.m2/repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar:/Users/rafaela.mendina/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-all/0.34.30/flexmark-all-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark/0.34.30/flexmark-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.34.30/flexmark-ext-abbreviation-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.34.30/flexmark-ext-admonition-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.34.30/flexmark-ext-anchorlink-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.34.30/flexmark-ext-aside-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.34.30/flexmark-ext-attributes-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.34.30/flexmark-ext-autolink-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.34.30/flexmark-ext-definition-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.34.30/flexmark-ext-emoji-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.34.30/flexmark-ext-enumerated-reference-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.34.30/flexmark-ext-escaped-character-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.34.30/flexmark-ext-footnotes-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.34.30/flexmark-ext-gfm-issues-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.34.30/flexmark-ext-gfm-strikethrough-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.34.30/flexmark-ext-gfm-tables-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.34.30/flexmark-ext-gfm-tasklist-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.34.30/flexmark-ext-gfm-users-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.34.30/flexmark-ext-gitlab-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.34.30/flexmark-ext-jekyll-front-matter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.34.30/flexmark-ext-jekyll-tag-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.34.30/flexmark-ext-media-tags-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-test-util/0.34.30/flexmark-test-util-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.34.30/flexmark-ext-ins-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.34.30/flexmark-ext-xwiki-macros-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.34.30/flexmark-ext-superscript-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.34.30/flexmark-ext-tables-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.34.30/flexmark-ext-toc-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.34.30/flexmark-ext-typographic-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.34.30/flexmark-ext-wikilink-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.34.30/flexmark-ext-yaml-front-matter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.34.30/flexmark-ext-youtube-embedded-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-formatter/0.34.30/flexmark-formatter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-html-parser/0.34.30/flexmark-html-parser-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.34.30/flexmark-jira-converter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.34.30/flexmark-pdf-converter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/0.0.1-RC13/openhtmltopdf-core-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/0.0.1-RC13/openhtmltopdf-pdfbox-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar:/Users/rafaela.mendina/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar:/Users/rafaela.mendina/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar:/Users/rafaela.mendina/.m2/repository/de/rototor/pdfbox/graphics2d/0.12/graphics2d-0.12.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/0.0.1-RC13/openhtmltopdf-rtl-support-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/com/ibm/icu/icu4j/59.1/icu4j-59.1.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/0.0.1-RC13/openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.34.30/flexmark-profile-pegdown-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-util/0.34.30/flexmark-util-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.34.30/flexmark-youtrack-converter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-junit/2.0.40/serenity-junit-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-screenplay/2.0.40/serenity-screenplay-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/uk/com/robust-it/cloning/1.9.10/cloning-1.9.10.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/2.0.40/serenity-screenplay-webdriver-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-cucumber/1.9.31/serenity-cucumber-1.9.31.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-java/2.4.0/cucumber-java-2.4.0.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-junit/2.4.0/cucumber-junit-2.4.0.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/Users/rafaela.mendina/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/rafaela.mendina/.m2/repository/org/assertj/assertj-core/3.6.2/assertj-core-3.6.2.jar:/Users/rafaela.mendina/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-rest-assured/2.0.90/serenity-rest-assured-2.0.90.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/json-path/3.3.0/json-path-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/rest-assured-common/3.3.0/rest-assured-common-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/xml-path/3.3.0/xml-path-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/rafaela.mendina/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.5/groovy-xml-2.5.5.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/groovy/groovy-json/2.5.5/groovy-json-2.5.5.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Montevideo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/surefire/surefirebooter15578892194665260602.jar /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/surefire 2023-03-24T11-34-10_214-jvmRun1 surefire12323691049654260432tmp surefire_03062678311554757868tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/test-classes:/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/SeleniumExercise4-1.0-SNAPSHOT.jar:/Users/rafaela.mendina/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/rafaela.mendina/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/rafaela.mendina/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-core/2.0.40/serenity-core-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/bytebuddy/byte-buddy/1.9.6/byte-buddy-1.9.6.jar:/Users/rafaela.mendina/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.6/byte-buddy-agent-1.9.6.jar:/Users/rafaela.mendina/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/rafaela.mendina/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/rafaela.mendina/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/rafaela.mendina/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/rafaela.mendina/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/rafaela.mendina/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2.jar:/Users/rafaela.mendina/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rafaela.mendina/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/rafaela.mendina/.m2/repository/cglib/cglib/3.2.5/cglib-3.2.5.jar:/Users/rafaela.mendina/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/rafaela.mendina/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/rafaela.mendina/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/rafaela.mendina/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-core/2.4.0/cucumber-core-2.4.0.jar:/Users/rafaela.mendina/.m2/repository/info/cukes/cucumber-html/0.2.6/cucumber-html-0.2.6.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/gherkin/5.0.0/gherkin-5.0.0.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/rafaela.mendina/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rafaela.mendina/.m2/repository/io/vavr/vavr/0.9.0/vavr-0.9.0.jar:/Users/rafaela.mendina/.m2/repository/io/vavr/vavr-match/0.9.0/vavr-match-0.9.0.jar:/Users/rafaela.mendina/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/rafaela.mendina/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar:/Users/rafaela.mendina/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-impl-2.3.0.1.jar:/Users/rafaela.mendina/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/rafaela.mendina/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-report-resources/2.0.40/serenity-report-resources-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-model/2.0.40/serenity-model-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-text/1.6/commons-text-1.6.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-reports/2.0.40/serenity-reports-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-stats/2.0.40/serenity-stats-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.2.51/kotlin-stdlib-1.2.51.jar:/Users/rafaela.mendina/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.2.51/kotlin-stdlib-common-1.2.51.jar:/Users/rafaela.mendina/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/rafaela.mendina/.m2/repository/com/google/code/gson/gson/2.8.4/gson-2.8.4.jar:/Users/rafaela.mendina/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/rafaela.mendina/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/rafaela.mendina/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/rafaela.mendina/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/rafaela.mendina/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/rafaela.mendina/.m2/repository/com/paulhammant/ngwebdriver/1.1.4/ngwebdriver-1.1.4.jar:/Users/rafaela.mendina/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20171121/jetty-util-9.4.8.v20171121.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20171121/jetty-io-9.4.8.v20171121.jar:/Users/rafaela.mendina/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.33.1/htmlunit-driver-2.33.1.jar:/Users/rafaela.mendina/.m2/repository/io/appium/java-client/6.1.0/java-client-6.1.0.jar:/Users/rafaela.mendina/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/rafaela.mendina/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/rafaela.mendina/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-beans/5.0.5.RELEASE/spring-beans-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-jcl/5.0.5.RELEASE/spring-jcl-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/springframework/spring-expression/5.0.5.RELEASE/spring-expression-5.0.5.RELEASE.jar:/Users/rafaela.mendina/.m2/repository/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar:/Users/rafaela.mendina/.m2/repository/org/openpnp/opencv/3.2.0-1/opencv-3.2.0-1.jar:/Users/rafaela.mendina/.m2/repository/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar:/Users/rafaela.mendina/.m2/repository/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar:/Users/rafaela.mendina/.m2/repository/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/groovy/groovy/2.5.5/groovy-2.5.5.jar:/Users/rafaela.mendina/.m2/repository/net/sf/opencsv/opencsv/2.0/opencsv-2.0.jar:/Users/rafaela.mendina/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/rafaela.mendina/.m2/repository/joda-time/joda-time/2.7/joda-time-2.7.jar:/Users/rafaela.mendina/.m2/repository/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar:/Users/rafaela.mendina/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar:/Users/rafaela.mendina/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/rafaela.mendina/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/rafaela.mendina/.m2/repository/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/Users/rafaela.mendina/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/rafaela.mendina/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.33/htmlunit-2.33.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.33/htmlunit-core-js-2.33.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.33/neko-htmlunit-2.33.jar:/Users/rafaela.mendina/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/rafaela.mendina/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.2.0/htmlunit-cssparser-1.2.0.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.12.v20180830/websocket-client-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-client/9.4.12.v20180830/jetty-client-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-http/9.4.12.v20180830/jetty-http-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.12.v20180830/jetty-xml-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.12.v20180830/websocket-common-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.12.v20180830/websocket-api-9.4.12.v20180830.jar:/Users/rafaela.mendina/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/rafaela.mendina/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/rafaela.mendina/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/rafaela.mendina/.m2/repository/org/fluentlenium/fluentlenium-core/0.10.2/fluentlenium-core-0.10.2.jar:/Users/rafaela.mendina/.m2/repository/com/jhlabs/filters/2.0.235/filters-2.0.235.jar:/Users/rafaela.mendina/.m2/repository/org/asciidoctor/asciidoctorj/1.5.6/asciidoctorj-1.5.6.jar:/Users/rafaela.mendina/.m2/repository/org/jruby/jruby-complete/1.7.26/jruby-complete-1.7.26.jar:/Users/rafaela.mendina/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/rafaela.mendina/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar:/Users/rafaela.mendina/.m2/repository/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar:/Users/rafaela.mendina/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/rafaela.mendina/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/rafaela.mendina/.m2/repository/org/awaitility/awaitility/3.1.0/awaitility-3.1.0.jar:/Users/rafaela.mendina/.m2/repository/com/typesafe/config/1.3.1/config-1.3.1.jar:/Users/rafaela.mendina/.m2/repository/org/jsoup/jsoup/1.10.3/jsoup-1.10.3.jar:/Users/rafaela.mendina/.m2/repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar:/Users/rafaela.mendina/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-all/0.34.30/flexmark-all-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark/0.34.30/flexmark-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.34.30/flexmark-ext-abbreviation-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-admonition/0.34.30/flexmark-ext-admonition-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-anchorlink/0.34.30/flexmark-ext-anchorlink-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-aside/0.34.30/flexmark-ext-aside-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-attributes/0.34.30/flexmark-ext-attributes-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-autolink/0.34.30/flexmark-ext-autolink-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-definition/0.34.30/flexmark-ext-definition-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-emoji/0.34.30/flexmark-ext-emoji-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.34.30/flexmark-ext-enumerated-reference-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-escaped-character/0.34.30/flexmark-ext-escaped-character-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-footnotes/0.34.30/flexmark-ext-footnotes-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.34.30/flexmark-ext-gfm-issues-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.34.30/flexmark-ext-gfm-strikethrough-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tables/0.34.30/flexmark-ext-gfm-tables-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.34.30/flexmark-ext-gfm-tasklist-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gfm-users/0.34.30/flexmark-ext-gfm-users-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-gitlab/0.34.30/flexmark-ext-gitlab-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.34.30/flexmark-ext-jekyll-front-matter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.34.30/flexmark-ext-jekyll-tag-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-media-tags/0.34.30/flexmark-ext-media-tags-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-test-util/0.34.30/flexmark-test-util-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-ins/0.34.30/flexmark-ext-ins-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.34.30/flexmark-ext-xwiki-macros-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-superscript/0.34.30/flexmark-ext-superscript-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-tables/0.34.30/flexmark-ext-tables-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-toc/0.34.30/flexmark-ext-toc-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-typographic/0.34.30/flexmark-ext-typographic-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-wikilink/0.34.30/flexmark-ext-wikilink-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.34.30/flexmark-ext-yaml-front-matter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.34.30/flexmark-ext-youtube-embedded-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-formatter/0.34.30/flexmark-formatter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-html-parser/0.34.30/flexmark-html-parser-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-jira-converter/0.34.30/flexmark-jira-converter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-pdf-converter/0.34.30/flexmark-pdf-converter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-core/0.0.1-RC13/openhtmltopdf-core-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-pdfbox/0.0.1-RC13/openhtmltopdf-pdfbox-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/org/apache/pdfbox/pdfbox/2.0.8/pdfbox-2.0.8.jar:/Users/rafaela.mendina/.m2/repository/org/apache/pdfbox/fontbox/2.0.8/fontbox-2.0.8.jar:/Users/rafaela.mendina/.m2/repository/org/apache/pdfbox/xmpbox/2.0.8/xmpbox-2.0.8.jar:/Users/rafaela.mendina/.m2/repository/de/rototor/pdfbox/graphics2d/0.12/graphics2d-0.12.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-rtl-support/0.0.1-RC13/openhtmltopdf-rtl-support-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/com/ibm/icu/icu4j/59.1/icu4j-59.1.jar:/Users/rafaela.mendina/.m2/repository/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/0.0.1-RC13/openhtmltopdf-jsoup-dom-converter-0.0.1-RC13.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-profile-pegdown/0.34.30/flexmark-profile-pegdown-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-util/0.34.30/flexmark-util-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/com/vladsch/flexmark/flexmark-youtrack-converter/0.34.30/flexmark-youtrack-converter-0.34.30.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-junit/2.0.40/serenity-junit-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-screenplay/2.0.40/serenity-screenplay-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/uk/com/robust-it/cloning/1.9.10/cloning-1.9.10.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-screenplay-webdriver/2.0.40/serenity-screenplay-webdriver-2.0.40.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-cucumber/1.9.31/serenity-cucumber-1.9.31.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-java/2.4.0/cucumber-java-2.4.0.jar:/Users/rafaela.mendina/.m2/repository/io/cucumber/cucumber-junit/2.4.0/cucumber-junit-2.4.0.jar:/Users/rafaela.mendina/.m2/repository/org/apache/commons/commons-csv/1.5/commons-csv-1.5.jar:/Users/rafaela.mendina/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/rafaela.mendina/.m2/repository/org/assertj/assertj-core/3.6.2/assertj-core-3.6.2.jar:/Users/rafaela.mendina/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/rafaela.mendina/.m2/repository/net/serenity-bdd/serenity-rest-assured/2.0.90/serenity-rest-assured-2.0.90.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/rest-assured/3.3.0/rest-assured-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/json-path/3.3.0/json-path-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/rest-assured-common/3.3.0/rest-assured-common-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/io/rest-assured/xml-path/3.3.0/xml-path-3.3.0.jar:/Users/rafaela.mendina/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/rafaela.mendina/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.5/groovy-xml-2.5.5.jar:/Users/rafaela.mendina/.m2/repository/org/codehaus/groovy/groovy-json/2.5.5/groovy-json-2.5.5.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/rafaela.mendina"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/surefire/surefirebooter15578892194665260602.jar"/>
+    <property name="java.protocol.handler.pkgs" value="com.google.common"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="user.name" value="rafaela.mendina"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/rafaela.mendina/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/vl/kx7slmbs6h38d0yjvk8nmcfwk5d33q/T/"/>
+    <property name="idea.version" value="2022.3.3"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/rafaela.mendina/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="Pizza results" classname="Search PedidosYa" time="19.115">
+    <error message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for MainPage.address_button to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: driver.version: unknown
+</error>
+    <system-out><![CDATA[11:34:11.608 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/serenity.properties 
+11:34:11.611 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/serenity.properties 
+11:34:11.611 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/serenity.properties 
+11:34:11.624 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.restart.browser.for.each=SCENARIO
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - drivers.mac.webdriver.chrome.driver=src/test/resources/webdriver/chromedriver
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - webdriver.driver=chrome
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.test.root=org.example
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.take.screenshots=DISABLED
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.project.name=PedidosYa Automation
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+11:34:11.625 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+11:34:11.889 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/serenity.properties 
+11:34:11.890 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/serenity.properties 
+11:34:11.890 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/serenity.properties 
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.restart.browser.for.each=SCENARIO
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - drivers.mac.webdriver.chrome.driver=src/test/resources/webdriver/chromedriver
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - webdriver.driver=chrome
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.test.root=org.example
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.take.screenshots=DISABLED
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.project.name=PedidosYa Automation
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+11:34:11.893 [main] DEBUG n.t.c.u.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+11:34:11.900 [main] INFO  n.t.c.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+11:34:11.904 [main] DEBUG n.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@9c18090d
+11:34:11.907 [main] INFO  n.t.c.steps.ConsoleLoggingListener - Test Suite Started: Search PedidosYa
+11:34:12.029 [pool-1-thread-1] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Pizza results
+-------------------------------------------------------------------(search-pedidosya;pizza-results)
+11:34:12.059 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in  in 15 ms: [src/test/resources]
+11:34:12.067 [pool-1-thread-1] DEBUG n.t.core.requirements.RootDirectory - Resource directories found in /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4 in 1 ms: [/Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/src/test/resources]
+11:34:12.089 [pool-1-thread-1] DEBUG n.t.c.r.m.cucumber.CucumberParser - Found no Cucumber 4.x.x class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+Feature: Search PedidosYa
+
+  Scenario Outline: Pizza results &amp#27;[90m# src/test/resources/features/PedidosYa.feature:8&amp#27;[0m
+    &amp#27;[36mGiven user search restaurant <type> and report the amount of results on the page&amp#27;[0m
+    &amp#27;[36mWhen filter by <filter> and report the amount of results on the page&amp#27;[0m
+    &amp#27;[36mAnd order the results by 'Mejor puntuados' and validate it&amp#27;[0m
+    &amp#27;[36mAnd select the first result&amp#27;[0m
+    &amp#27;[36mThen User views restaurant important information&amp#27;[0m
+
+    Examples: 
+
+  Background:                                             &amp#27;[90m# src/test/resources/features/PedidosYa.feature:3&amp#27;[0m
+11:34:31.232 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:34:31.240 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@49604dae(format = Optional[XML])
+11:34:31.240 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@6e38a847(format = Optional[JSON])
+11:34:31.240 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@6e38a847
+11:34:31.304 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77d81cf8(format = Optional[HTML])
+11:34:31.304 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77d81cf8
+11:34:31.305 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reporting formats: [JSON, HTML]
+11:34:31.312 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@6e38a847
+11:34:31.313 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+11:34:31.313 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Search PedidosYa:Pizza results
+11:34:31.313 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@6e38a847: Generating report for test outcome: Search PedidosYa:Pizza results
+11:34:31.315 [pool-1-thread-1] DEBUG n.t.c.r.json.JSONTestOutcomeReporter - Generating JSON report for Pizza results to file /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/site/serenity/33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60.json (using temp file /Users/rafaela.mendina/Documents/SeleniumBootcamp/SeleniumExercise4/target/site/serenity/33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60.json5e7cf611-7017-467e-a90e-144fc8103767)
+11:34:31.362 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Search PedidosYa:Pizza results done
+11:34:31.504 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+11:34:31.504 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 192 ms
+11:34:31.505 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77d81cf8
+11:34:31.505 [pool-1-thread-1] DEBUG n.t.c.r.j.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+11:34:31.505 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Search PedidosYa:Pizza results
+11:34:31.505 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@77d81cf8: Generating report for test outcome: Search PedidosYa:Pizza results
+11:34:31.506 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Pizza results in 33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60
+11:34:31.516 [pool-2-thread-1] INFO  n.t.c.r.PackageRequirementsTagProvider - Loading requirements from package requirements at: org.example
+11:34:31.894 [pool-2-thread-1] DEBUG n.t.c.r.m.cucumber.CucumberParser - Found no Cucumber 4.x.x class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+11:34:31.897 [pool-2-thread-1] DEBUG n.t.c.r.RequirementsTagProvider - Requirements found:[Requirement{name='Search PedidosYa', type='feature' parent = 'null', cardNumber='null'}]
+11:34:31.902 [pool-2-thread-1] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Pizza results-[]: Optional[Requirement{name='Search PedidosYa', type='feature' parent = 'null', cardNumber='null'}]
+11:34:31.907 [pool-2-thread-1] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Pizza results-[]: Optional[Requirement{name='Search PedidosYa', type='feature' parent = 'null', cardNumber='null'}]
+11:34:32.033 [pool-2-thread-1] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Pizza results-[]: Optional[Requirement{name='Search PedidosYa', type='feature' parent = 'null', cardNumber='null'}]
+11:34:32.034 [pool-2-thread-1] DEBUG n.t.c.r.BaseRequirementsService - Requirement found for test outcome Pizza results-[]: Optional[Requirement{name='Search PedidosYa', type='feature' parent = 'null', cardNumber='null'}]
+11:34:32.206 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60_screenshots.html
+11:34:32.784 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60_screenshots.html in 578 ms
+11:34:32.786 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Search PedidosYa:Pizza results in 33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60.html in directory target/site/serenity  
+11:34:33.855 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generating report in 33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60.html
+11:34:33.966 [pool-2-thread-1] DEBUG n.t.c.r.h.HtmlAcceptanceTestReporter - Generated report 33bc52aa0cc842b9e387b31b7ab90a209d41465eb3394c2e68e2e70e168f5c60.html in 111 ms
+11:34:33.967 [pool-2-thread-1] DEBUG n.t.core.reports.ReportService - Processing test outcome Search PedidosYa:Pizza results done
+11:34:33.968 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Shutting down executor service
+11:34:33.969 [pool-1-thread-1] DEBUG n.t.core.reports.ReportService - Reports generated in: 2464 ms
+11:34:33.969 [pool-1-thread-1] DEBUG n.s.core.photography.Darkroom - Closing darkroom
+
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31msrc/test/resources/features/PedidosYa.feature:18 &amp#27;[0m# Pizza results
+
+1 Scenarios (&amp#27;[31m1 failed&amp#27;[0m)
+7 Steps (&amp#27;[31m1 failed&amp#27;[0m, &amp#27;[36m5 skipped&amp#27;[0m, &amp#27;[32m1 passed&amp#27;[0m)
+0m19.423s
+
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1009)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:841)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1085)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at PedidosYa.pageobjects.MainPage.setAddress(MainPage.java:62)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.CGLIB$setAddress$0(<generated>)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7$$FastClassByCGLIB$$5a7a4946.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.setAddress(<generated>)
+	at PedidosYa.steps.PedidosYaUser.setAddress(PedidosYaUser.java:19)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.CGLIB$setAddress$1(<generated>)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a$$FastClassByCGLIB$$d4f72225.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.setAddress(<generated>)
+	at PedidosYa.stepsdefinitions.UserStepsDefinitions.setAddress(UserStepsDefinitions.java:23)
+	at ✽.set the address(src/test/resources/features/PedidosYa.feature:6)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for MainPage.address_button to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1006)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:841)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1085)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at PedidosYa.pageobjects.MainPage.setAddress(MainPage.java:62)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.CGLIB$setAddress$0(<generated>)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7$$FastClassByCGLIB$$5a7a4946.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.setAddress(<generated>)
+	at PedidosYa.steps.PedidosYaUser.setAddress(PedidosYaUser.java:19)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.CGLIB$setAddress$1(<generated>)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a$$FastClassByCGLIB$$d4f72225.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.setAddress(<generated>)
+	at PedidosYa.stepsdefinitions.UserStepsDefinitions.setAddress(UserStepsDefinitions.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:367)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:172)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:124)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:27)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:210)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 73 more
+
+11:34:12.723 [pool-1-thread-1] DEBUG n.s.c.w.s.ChromeServicePool - Creating new driver instance with capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [--enable-automation, --test-type], extensions: []}, platform: ANY, version: }
+
+11:34:21.200 [pool-1-thread-1] DEBUG n.s.core.photography.Darkroom - Opening darkroom
+11:34:21.201 [Darkroom Processing Line] DEBUG n.s.c.p.DarkroomProcessingLine - Darkroom processing line starting up
+11:34:22.703 [pool-1-thread-1] DEBUG n.s.core.photography.Darkroom - Send negative for processing for target/site/serenity/ce6beab243cd9c7f9934f8e4f8cd1d75190e46ccd4163b647ae544a7262429a5.png
+11:34:22.703 [Darkroom Processing Line] DEBUG n.s.c.p.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-11716063730237280678
+11:34:22.703 [Darkroom Processing Line] DEBUG n.s.c.p.DarkroomProcessingLine - Saving screenshot to target/site/serenity/ce6beab243cd9c7f9934f8e4f8cd1d75190e46ccd4163b647ae544a7262429a5.png
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser navigates to https://www.pedidosya.com.uy/&amp#27;[0m &amp#27;[90m# UserStepsDefinitions.userNavigateToPedidosYa()&amp#27;[0m
+    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mset the address&amp#27;[0m                                   &amp#27;[90m# UserStepsDefinitions.setAddress()&amp#27;[0m
+      &amp#27;[31mnet.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1009)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:841)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1085)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at PedidosYa.pageobjects.MainPage.setAddress(MainPage.java:62)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.CGLIB$setAddress$0(<generated>)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7$$FastClassByCGLIB$$5a7a4946.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.setAddress(<generated>)
+	at PedidosYa.steps.PedidosYaUser.setAddress(PedidosYaUser.java:19)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.CGLIB$setAddress$1(<generated>)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a$$FastClassByCGLIB$$d4f72225.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.setAddress(<generated>)
+	at PedidosYa.stepsdefinitions.UserStepsDefinitions.setAddress(UserStepsDefinitions.java:23)
+	at ✽.set the address(src/test/resources/features/PedidosYa.feature:6)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for MainPage.address_button to be enabled (tried for 5 second(s) with 100 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1006)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:841)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1085)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at PedidosYa.pageobjects.MainPage.setAddress(MainPage.java:62)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.CGLIB$setAddress$0(<generated>)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7$$FastClassByCGLIB$$5a7a4946.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.pageobjects.MainPage$$EnhancerByCGLIB$$e22eb5a7.setAddress(<generated>)
+	at PedidosYa.steps.PedidosYaUser.setAddress(PedidosYaUser.java:19)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.CGLIB$setAddress$1(<generated>)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a$$FastClassByCGLIB$$d4f72225.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:390)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:161)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at PedidosYa.steps.PedidosYaUser$$EnhancerByCGLIB$$7ecf881a.setAddress(<generated>)
+	at PedidosYa.stepsdefinitions.UserStepsDefinitions.setAddress(UserStepsDefinitions.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:367)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: driver.version: unknown
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:172)
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:124)
+	at net.serenitybdd.core.pages.WebElementResolverByElementLocator.resolveForDriver(WebElementResolverByElementLocator.java:27)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:210)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:63)
+	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 73 more
+&amp#27;[0m
+
+  Scenario Outline: Pizza results                                                   &amp#27;[90m# src/test/resources/features/PedidosYa.feature:18&amp#27;[0m
+    &amp#27;[36mGiven &amp#27;[0m&amp#27;[36muser search restaurant &amp#27;[0m&amp#27;[36m&amp#27;[1mPizza&amp#27;[0m&amp#27;[36m and report the amount of results on the page&amp#27;[0m &amp#27;[90m# UserStepsDefinitions.searchRestaurantByFoodType(String)&amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mfilter by &amp#27;[0m&amp#27;[36m&amp#27;[1mDescuentos&amp#27;[0m&amp#27;[36m and report the amount of results on the page&amp#27;[0m          &amp#27;[90m# UserStepsDefinitions.filterBy(String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36morder the results by 'Mejor puntuados' and validate it&amp#27;[0m                      &amp#27;[90m# UserStepsDefinitions.sortByScore()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mselect the first result&amp#27;[0m                                                     &amp#27;[90m# UserStepsDefinitions.userSelectFirstResult()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser views restaurant important information&amp#27;[0m                                &amp#27;[90m# UserStepsDefinitions.userViewDetails()&amp#27;[0m
+11:34:31.099 [pool-1-thread-1] ERROR n.t.c.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Pizza results
+--------------------------------------------------------------------------
+11:34:31.101 [pool-1-thread-1] DEBUG n.t.c.steps.ConsoleLoggingListener - RELATED ISSUES: 
+11:34:31.222 [pool-1-thread-1] ERROR n.t.c.steps.ConsoleLoggingListener - TEST FAILED AT STEP Set address
+11:34:31.222 [pool-1-thread-1] ERROR n.t.c.steps.ConsoleLoggingListener - Expected enabled element was not enabledBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: '192.168.68.105', ip: 'fdd1:ee21:7f4f:45cd:1059:92e:13c2:1122%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'Driver info: driver.version: unknown
+11:34:33.970 [Darkroom Processing Line] DEBUG n.s.c.p.DarkroomProcessingLine - Darkroom processing line shutting down
+]]></system-out>
+    <system-err><![CDATA[Mar 24, 2023 11:34:12 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 43451
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1679668455.863][WARNING]: This version of ChromeDriver has not been tested with Chrome version 111.
+[1679668455.919][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+Mar 24, 2023 11:34:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
